@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>delete account</title>
+<script language="javascript">
+//var n=document.form1.acn.value;
+function funalert1()
+{ 
+	var n=document.form2.acc_no.value;
+	if(n=="")
+	{
+		alert("enter account number..");
+		window.focus();
+		return false;
+	}
+	
+	return true;
+}
+</script>
+</head>
+<body bgcolor="orange">
+<a href="login.html">LOGOUT</a>
+<P>
+<P>
+
+<center><h1><u> 
+<font face="Lucida Handwriting">
+DELETE ACCOUNT
+</font>
+</u>
+</h1>
+<form name="form2" onsubmit="return funalert1()" action="deletes2.jsp">
+ENTER ACCOUNT NUMBER: <input type="text" name="acc_no">
+<p>
+<input type="submit" value="submit">
+</p>
+</form>
+</font>
+</body>
+</html>

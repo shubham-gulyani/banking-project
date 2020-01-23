@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>credit page</title>
+<script language="javascript">
+function fun1()
+{
+  var n=document.form1.acn.value;
+  var p=document.form1.debit.value;
+  if(n="")
+  {
+  alert("enter account number");
+  window.focus();
+  return false;
+  }
+  if(p=="")
+  {
+  alert("enter amount");
+  window.focus();
+  return false;
+  }
+  return true;
+}
+</script>
+</head>
+<body style="background-image: url(/img/6.jpg);">
+<a href="login.html">LOGOUT</a>
+<P>
+<P>
+
+<center><h1><u> 
+<font face="Lucida Handwriting">
+CREDIT TO ACCOUNT
+</font>
+</u></h1></center>
+
+<form name="form1" onsubmit="return fun1()" action="credit.jsp">
+Enter Account Number
+<input type="text" name="acn">
+<p>
+<p>
+Enter Amount To Be Credited
+<input type="text" name="debit">
+<p>
+<p>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</form>
+
+</body>
+</html>

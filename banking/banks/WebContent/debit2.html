@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>debit page</title>
+<script language="javascript">
+function fun1()
+{
+  var n=document.form1.acn.value;
+  var p=document.form1.debit.value;
+  if(n="")
+  {
+  alert("enter account number");
+  window.focus();
+  return false;
+  }
+  if(p=="")
+  {
+  alert("enter amount");
+  window.focus();
+  return false;
+  }
+  return true;
+}
+</script>
+</head>
+<body bgcolor="orange">
+<a href="login.html">LOGOUT</a>
+<P>
+<P>
+
+<font face="Lucida Handwriting">
+<form name="form1" onsubmit="return fun1()" action="debit2.jsp">
+Enter Account Number
+<input type="text" name="acn">
+<p>
+Enter Amount To Be Debited
+<input type="text" name="debit">
+<p>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</p>
+</font>
+</form>
+</body>
+</html>

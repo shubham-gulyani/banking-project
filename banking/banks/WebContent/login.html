@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>login page</title>
+<script language="javascript">
+function display()
+{
+	var i=document.login.userid.value;
+	var p=document.login.password.value;
+	var l=document.login.password.value.length;
+	if((i==null || i=="") && (p==null || p==""))
+			{
+		alert("enter user id & password");
+	window.focus();
+	return false;
+	}
+ if(i==null || i=="")
+		{
+				  alert("enter user id");
+					window.focus();
+					return false;
+
+		}
+		   if(p==null || p=="")
+			  {
+			  alert("enter a password");
+				window.focus();
+				return false;
+
+			  }
+	  if(l<8 || s>12){
+		alert("enter valid password");
+		window.focus();
+		return false;
+	  }
+	  return true;
+	  }
+
+</script>
+
+</head>
+<body style="background-image: url(/img/4.jpg);"> 
+<form name="login" method="get" onsubmit="return display()" action="login1.jsp">
+<center>
+<h1> <U> <font face="Lucida Handwriting">LOGIN PAGE
+</font>
+</U>
+</h1>
+<p>
+<p>
+<p>
+<p>
+<p>
+USER ID <input type="text" name="userid">
+<p>
+PASSWORD <input type="password" name="pass">
+<p>
+<input type="submit" name="submit" value="LOGIN">
+</center>
+</form>
+</body>
+</html>

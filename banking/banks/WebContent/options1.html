@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>my functions</title>
+<script language="javascript">
+function check1()
+{var c=document.search1.srch.selectedIndex;
+
+	if(c<0)
+		{
+		alert("please choose an option");
+		window.focus();
+		return false;
+		}
+	return true;
+		}
+		
+		function check2()
+		{
+		var c=document.search1.trans.selectedIndex;
+
+		if(c<0)
+			{alert("please choose an option");
+			window.focus();
+			return false;
+			}
+		return true;
+			}
+	
+
+</script>
+		</head>
+<body bgcolor="orange">
+<a href="login.html">LOGOUT</a>
+<P>
+<P>
+
+<center><h1><u> 
+<font face="Lucida Handwriting">
+OTHER OPTIONS</font>
+</u></h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form name="search1" onsubmit="return check1()" action="search1.jsp">
+SEARCH <select name="srch">
+<option>by name</option>
+<option>by account no.</option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" value="SUBMIT">
+<p>
+<p>
+<p>
+<p>
+<p>
+<button type="button" onclick="window.location.href='sort1.jsp'">SORT</button>
+<p>
+<p>
+<p>
+<p>
+<p>
+<button type="button" onclick="window.location.href='addaccount1.html'">ADD ACCOUNT</button>
+<p>
+<p>
+<p>
+<p>
+<p>
+<button type="button" onclick="window.location.href='delete1.html'">DELETE</button>
+</form>
+<form name="trans" onsubmit="check2()" action="transaction.jsp">
+<p>
+<p>
+<p>
+<p>
+<p>
+TRANSACTION  <select name="trns">
+<option>credit</option>
+<option>debit</option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" value="SUBMIT">
+<p>
+<p>
+<p>
+<p>
+<p>
+
+<button type="button" onclick="window.location.href='loan1.html'">LOAN</button>
+<p>
+<p>
+<p>
+<p>
+<p>
+<button type="button" onclick="window.location.href='http://mailing12.mybluemix.net/mailinterface.html'">SEND MAIL</button>
+</p>
+</font>
+</form>
+</center>
+</body>
+</html>

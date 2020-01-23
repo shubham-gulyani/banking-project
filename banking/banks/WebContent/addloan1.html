@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>add loan</title>
+<script language="javascript">
+function check()
+{var v1=document.frm.t1.value;
+var v2=document.frm.t2.value;
+var v3=document.frm.t3.value;
+var v4=document.frm.t4.value;
+var v5=document.frm.t5.value;
+var v6=document.frm.t6.value;
+var v7=document.frm.t7.value;
+var s=document.frm.s1.selectedIndex;
+var v8=document.frm.t8.value;
+if(v1==null || v1=="")
+	{
+	alert("enter name");
+	return false;
+	}
+if(v7==null || v7=="")
+{
+alert("enter branch");
+return false;
+}
+if(v2==null || v2=="")
+{
+alert("enter account number");
+return false;
+}
+if(v3==null || v3=="")
+{
+alert("enter address");
+return false;
+}
+if(v4==null || v4=="")
+{
+alert("enter phone no.");
+return false;
+}
+if(v5==null || v5=="")
+{
+alert("enter balance");
+return false;
+}
+if(v6==null || v6=="")
+{
+alert("enter date of joining");
+return false;
+}
+if(s<1)
+	{
+	alert("please choose type of loan");
+	return false;
+	}
+if(v8==null || v8=="")
+{
+alert("enter a email id");
+return false;
+}
+if(v8.indexOf("@")<0 &&v8.indexOf(".")<0)
+	{
+	alert("please enter a valid email id");
+	}
+return true;
+		}
+		</script>
+</head>
+<body bgcolor="orange">
+<center><h1><u> 
+<font face="Lucida Handwriting">
+ADD NEW LOAN
+</font>
+</u></h1></center>
+<form name="frm" onsubmit="return check()" action="addloans1.jsp">
+
+NAME: <input type="text" name="t1"><br><br>
+ACCOUNT NUMBER: <input type="text" name="t2"><br><br>
+ADDRESS: <input type="text" name="t3"><br><br>
+PHONE NUMBER: <input type="text" name="t4" value="+91"><br><br>
+BALANCE:<input type="text" name="t5"><br><br>
+DATE OF JOINING: <input type="text" name="t6"><br><br>
+BRANCH: <input type="text" name="t7"><br><br>
+TYPE OF LOAN: <select name="s1">
+<option>housing loan</option>
+<option>education loan</option>
+<option>personal loan</option>
+</select>
+EMAIL ID: <input type="text" name="t8"><br><br>
+
+<br><br>
+<input type="submit" value="SUBMIT">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" value="RESET">
+
+</form>
+</body>
+</html>
